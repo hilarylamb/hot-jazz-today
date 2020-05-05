@@ -68,3 +68,17 @@ body {
   line-height: 165%;
   margin-bottom: 48px;
 }
+
+.home__cta {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: open sans, sans serif;
+  font-weight: 700;
+  background-color: var(--dark001);
+  color: var(--light001);
+  border-radius: 50px;
+  border: 2px solid var(--dark001);
+  padding: 16px 48px;
+  font-size: 0.625rem;
+}
