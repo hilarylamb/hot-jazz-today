@@ -25,6 +25,32 @@ body {
   height: 100%;
 }
 
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: var(--dark001);
+  border: none;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: '';
+  height: 20px;
+  border-left: 1px solid var(--light001);
+  transform: rotate(90deg);
+  margin: -3px;
+  transition: transform 0.3s ease;
+}
+
 .home {
   height: 100%;
   display: grid;
