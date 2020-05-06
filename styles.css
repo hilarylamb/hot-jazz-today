@@ -112,8 +112,64 @@ body {
 }
 
 .group-one .home__card-square {
-  background-image: url(./images/profile.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 27, 28, 0) 50%,
+      rgba(26, 27, 28, 0.2) 74.85%,
+      rgba(26, 27, 28, 0.4) 100%
+    ),
+    url(./images/profile.jpg);
+}
+
+.group-one .home__card--large {
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 27, 28, 0) 50%,
+      rgba(26, 27, 28, 0.2) 74.85%,
+      rgba(26, 27, 28, 0.4) 100%
+    ),
+    url(./images/profile.jpg);
+}
+
+.group-two {
+  grid-column: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-two .home__card-square {
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 27, 28, 0) 50%,
+      rgba(26, 27, 28, 0.2) 74.85%,
+      rgba(26, 27, 28, 0.4) 100%
+    ),
+    url(./images/profile.jpg);
+}
+
+.group-two .home__card--large {
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 27, 28, 0) 50%,
+      rgba(26, 27, 28, 0.2) 74.85%,
+      rgba(26, 27, 28, 0.4) 100%
+    ),
+    url(./images/profile.jpg);
+}
+
+.home__card {
+  margin: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--dark001);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.home__card header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
