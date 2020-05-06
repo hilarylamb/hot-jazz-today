@@ -81,4 +81,39 @@ body {
   border: 2px solid var(--dark001);
   padding: 16px 48px;
   font-size: 0.625rem;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.home__cta:hover {
+  background-color: var(--light001);
+  color: var(--dark001);
+}
+
+.home__cta:focus,
+.home__cta:active {
+  background-color: var(--light001);
+  color: var(--dark001);
+  outline: 5px solid var(--red001);
+}
+
+.home__cards {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px;
+}
+
+.group-one {
+  grid-column: 1 / span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-one .home__card-square {
+  background-image: url(./images/profile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
