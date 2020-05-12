@@ -73,7 +73,7 @@ body {
   height: 100%;
   width: 40%;
   background-color: var(--dark001);
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
   transition: tranform: 0.3s ease;
   z-index: 5;
 
@@ -96,6 +96,10 @@ body {
 
 .main-nav a:hover {
     border-bottom: 1px solid var(--light001);
+}
+
+.main-nav a:focus, .main-nav a:active {
+    outline: 5px solid var(--red001);
 }
 
 .home {
